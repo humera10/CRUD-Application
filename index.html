@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <title>New Crud Application</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+
+    <section class="main">
+        <div class="container2">
+            
+            <select id="category" class="opt"  >
+                <!-- <option  notSelected >select</option> -->
+                <option value="0">Name</option>
+                <option value="1">Employee Id</option>
+                <option value="2">Department</option>
+                <option value="3">Email</option>
+                <option value="4">Password</option>
+            </select>
+
+            <button id="addBtn" class="add-btn"  onclick="showModel1()"><i class="fa-solid fa-plus"></i>   
+            </button>
+        
+            <!-- <input type="text" placeholder="Enter Data">  -->
+            <div class="search">
+                <input type="search" placeholder="Type to Search" id="myInput" class="search-box" onkeyup="searchingData()" > 
+                <button class="search-btn" ><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        </section>
+
+
+
+
+    <section class="crud">
+        
+        
+        
+        <div id= header>
+
+            <span class="close" >&times;</span>
+            
+            
+                <form action="" id="registration">
+                    
+
+                <div id="heading">
+                    
+                    <h2>NEW CRUD APP</h2>
+            
+                </div>
+
+                <div class="container">
+
+                   <div class="details">
+                    <label class="lab">Name:</label>
+                   <input type="text" id="name" class="form-control" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="details">
+                        <label class="lab">Employee ID:</label>
+                       <input type="text" id="empid" class="form-control" placeholder="Enter Your ID">
+                        </div>
+
+
+                        <div class="details">
+                            <label class="lab">Department:</label>
+                            <input type="text" id="dept" class="form-control" placeholder="Enter Your Department">
+                          </div>
+    
+
+                    
+                  <div class="details">
+                    <label class="lab">Email:</label>
+                    <input type="text" id="email" class="form-control" placeholder="Enter Your Email">
+                  </div>
+
+                    <div class="details">
+                        <label class="lab">Password:</label>
+                        <input type="password" id="pass" class="form-control" placeholder="Enter Your Password">
+                    </div>
+
+                    
+
+                    <button type="submit" id="btn">Submit</button>
+                </div>
+            
+            </form>
+        </div>
+
+
+
+
+
+    <div class="tab">
+        <table class="table" id="tbl2">
+            <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+             <tbody id="tableData"> 
+                
+            
+            
+
+        </tbody>     
+        </table>
+    </div>
+
+    </section>
+
+
+    
+</body>
+<!-- <script src="script.js"></script> -->
+<!-- <script src="sc1.js"></script> -->
+<script src="newscript.js"></script>
+</html>
